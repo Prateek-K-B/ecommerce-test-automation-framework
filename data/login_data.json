@@ -1,0 +1,38 @@
+[
+  {
+    "case_name": "valid_login",
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "expect_success": true
+  },
+  {
+    "case_name": "invalid_password",
+    "username": "standard_user",
+    "password": "wrong_password",
+    "expect_success": false
+  },
+  {
+    "case_name": "invalid_username",
+    "username": "unknown_user",
+    "password": "secret_sauce",
+    "expect_success": false
+  },
+  {
+    "case_name": "locked_out_user",
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "expect_success": false
+  },
+  {
+    "case_name": "empty_username",
+    "username": "",
+    "password": "secret_sauce",
+    "expect_success": false
+  },
+  {
+    "case_name": "empty_password",
+    "username": "standard_user",
+    "password": "",
+    "expect_success": false
+  }
+]
